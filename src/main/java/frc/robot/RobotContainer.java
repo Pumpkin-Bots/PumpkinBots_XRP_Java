@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.ExampleCommand;
 import frc.robot.commands.AutonomousWave;
+import frc.robot.commands.DriveForward;
 import frc.robot.subsystems.Arm;
 import frc.robot.subsystems.XRPDrivetrain;
 import edu.wpi.first.wpilibj2.command.Command;
@@ -24,6 +25,12 @@ public class RobotContainer {
 
   private final ExampleCommand m_autoCommand = new ExampleCommand(m_xrpDrivetrain);
   private final AutonomousWave m_waveCommand = new AutonomousWave(m_arm);
+  private final DriveForward m_driveCommand = new DriveForward(m_xrpDrivetrain);
+
+  /*
+   * m_drive_command ==> new DriveForward(alex_test_onboarding)
+   * 
+   */
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
@@ -46,6 +53,6 @@ public class RobotContainer {
    */
   public Command getAutonomousCommand() {
     // An ExampleCommand will run in autonomous
-    return m_waveCommand;
+    return m_driveCommand;
   }
 }
