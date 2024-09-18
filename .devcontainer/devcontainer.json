@@ -1,16 +1,5 @@
 {
     "name": "General XRP Development",
-    
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
 
-    // Must match user defined in container
-    "remoteUser": "pumpkin_web",
-
-    // Specifies volumes to be mounted into the container
-    "mounts": [
-        "source=${localEnv:HOME}/.gradle,target=/home/pumpkin_web/.gradle,type=bind,consistency=cached"
-    ]
-
+    "image": "wpilib/ubuntu-base:22.04"
 }
