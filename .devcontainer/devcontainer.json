@@ -9,5 +9,8 @@
                 "vscjava.vscode-java-pack"
             ]
         }
-    }
+    },
+
+    // Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "java -version"
 }
