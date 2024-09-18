@@ -6,9 +6,7 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "vscjava.vscode-java-pack",
-                // The WPILib extension itself
-                "wpilibsuite.vscode-wpilib"
+                "vscjava.vscode-java-pack"
             ]
         }
     }
