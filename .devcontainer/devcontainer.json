@@ -1,7 +1,9 @@
 {
     "name": "General XRP Development",
 
-    "image": "wpilib/ubuntu-base:22.04",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
 
     "customizations": {
         "vscode": {
